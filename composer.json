@@ -1,0 +1,23 @@
+{
+    "name": "expressodev/ee-test-helpers",
+    "type": "library",
+    "description": "Helpful helpers to make testing ExpressionEngine add-ons easier",
+    "keywords": [
+        "expressionengine",
+        "ee"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Macneil",
+            "email": "adrian@adrianmacneil.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "EETestHelpers" : "src/" }
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.7",
+        "phpunit/phpunit": "~3.7.0"
+    }
+}
