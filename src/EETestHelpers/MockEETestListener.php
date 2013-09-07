@@ -29,13 +29,13 @@ class MockEETestListener implements \PHPUnit_Framework_TestListener
         static::$ee = $ee;
     }
 
-    public function addError(\PHPUnit_Framework_Test $test, Exception $e, $time) {}
+    public function addError(\PHPUnit_Framework_Test $test, \Exception $e, $time) {}
 
     public function addFailure(\PHPUnit_Framework_Test $test, \PHPUnit_Framework_AssertionFailedError $e, $time) {}
 
-    public function addIncompleteTest(\PHPUnit_Framework_Test $test, Exception $e, $time) {}
+    public function addIncompleteTest(\PHPUnit_Framework_Test $test, \Exception $e, $time) {}
 
-    public function addSkippedTest(\PHPUnit_Framework_Test $test, Exception $e, $time) {}
+    public function addSkippedTest(\PHPUnit_Framework_Test $test, \Exception $e, $time) {}
 
     public function startTestSuite(\PHPUnit_Framework_TestSuite $suite) {}
 
