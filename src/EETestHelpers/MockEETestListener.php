@@ -59,6 +59,7 @@ class MockEETestListener implements \PHPUnit_Framework_TestListener
         $ee = Mockery::mock('ee_instance');
 
         // mock common EE libraries
+        $ee->cache = Mockery::mock('ee_cache');
         $ee->config = Mockery::mock('ee_config');
         $ee->cp = Mockery::mock('ee_cp');
         $ee->db = Mockery::mock('ee_db');
