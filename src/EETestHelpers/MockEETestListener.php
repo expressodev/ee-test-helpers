@@ -69,6 +69,7 @@ class MockEETestListener implements \PHPUnit_Framework_TestListener
         $ee->functions = Mockery::mock('ee_functions');
         $ee->input = Mockery::mock('ee_input');
         $ee->lang = Mockery::mock('ee_lang', array('loadfile' => null));
+        $ee->lang->language = array();
         $ee->load = Mockery::mock('ee_load', array('helper' => null, 'library' => null, 'model' => null));
         $ee->localize = Mockery::mock('ee_localize');
         $ee->output = Mockery::mock('ee_output');
